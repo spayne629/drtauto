@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useTheme } from './context/ThemeContext';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import Nav from './components/Nav';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const { theme } = useTheme();
+
+  useEffect(() => {
+    document.body.className = theme === 'light' ? 'light-mode' : 'dark-mode';
+  }, [theme]);
 
   return (
     <>

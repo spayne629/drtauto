@@ -1,14 +1,19 @@
 import React from 'react';
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import './index.css';
-import App from './App.jsx';
+import App from './App';
+import { ThemeProvider } from './context/ThemeContext';
 
-const root = createRoot(document.getElementById('root'));
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
 
 root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+  <React.StrictMode>
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </React.StrictMode>
 );
 
