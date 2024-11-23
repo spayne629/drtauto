@@ -6,7 +6,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import '../custom.scss';
 import { useTheme } from '../context/ThemeContext';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 import img1 from '../assets/images/1.jpg';
 import img2 from '../assets/images/bNs.jpg';
@@ -38,39 +38,46 @@ const CarouselSwiper = () => {
                         slideShadows: true,
                     }}
                     pagination={{ clickable: true }}
-                    modules={[EffectCoverflow, Pagination]}
+                    navigation={true}
+                    modules={[EffectCoverflow, Pagination, Navigation]}
                     className={`mySwiper ${theme === 'light' ? 'navbar-light bg-light' : 'navbar-dark bg-dark'}`}
                     >
-                    <SwiperSlide>
+                    <SwiperSlide className="mySlides" id="slide1">
                         <img src={img1} alt="Slide 1" />
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide className="mySlides" id="slide2">
                         <img src={img2} alt="Slide 2" />
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide className="mySlides" id="slide3">
                         <img src={img3} alt="Slide 3" />
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide className="mySlides" id="slide4">
                         <img src={img4} alt="Slide 4" />
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide className="mySlides" id="slide5">
                         <img src={img5} alt="Slide 5" />
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide className="mySlides" id="slide6">
                         <img src={img6} alt="Slide 6" />
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide className="mySlides" id="slide7">
                         <img src={img7} alt="Slide 7" />
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide className="mySlides" id="slide8">
                         <img src={img8} alt="Slide 8" />
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide className="mySlides" id="slide9">
                         <img src={img9} alt="Slide 9" />
                     </SwiperSlide>
                     </Swiper>
                 </div>
                 <div className="swiper-pagination"></div>
+                <div
+                    className="swiper-button-prev"
+                ></div>
+                <div
+                    className="swiper-button-next"
+                ></div>
             </div>
         </>
     );
