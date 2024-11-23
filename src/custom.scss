@@ -1,0 +1,255 @@
+// Import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/swiper/swiper";
+
+$white:    #c5cacd !important;
+$gray-100: #f8f9fa !important;
+$gray-200: #e9ecef !important;
+$gray-300: #dee2e6 !important;
+$gray-400: #c5cacd !important;
+$gray-500: #a3a3a3 !important;
+$gray-600: #858585 !important;
+$gray-700: #504f4f !important;
+$gray-800: #343a40 !important;
+$gray-900: #212529 !important;
+$black:    #000 !important;
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+// Light mode styles
+body.light-mode {
+  background-color: #c5cacd;
+  color: #0000b3;
+  font-family: "Expletus Sans", Raleway, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: Ethnocentric, DignusExplandExtBlck, sans-serif;
+    line-height: 1rem;
+}
+
+h4, h5, h6 {
+    font-family: DignusExpandExtBlck, "Expletus Sans", sans-serif
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.nav-link.h4:hover {
+  color: #0000b3;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.navbar-light {
+  background-color: #c3ccd5 !important;
+  color: #0000b3 !important;
+  height: 4.5rem;
+}
+
+// Dark mode styles
+body.dark-mode {
+  background-color: #000000 !important;
+  color: #858585;
+  font-family: "Expletus Sans", Raleway, sans-serif;
+}
+
+.navbar-dark {
+  background-color: #22262a !important;
+  color: #b3b3b3 !important;
+  height: 4.5rem;
+}
+
+.nav-link:active {
+    background-color: transparent;
+}
+
+.heartbeat-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+  }
+  .ak-heartbeat-btn {
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    margin-left: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+    display: flex;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba($primary, 70%);
+    align-items: center;
+    justify-content: center;
+    &.type-2 {
+      width: 40px;
+      height: 40px;
+      padding: 20px;
+    }
+  }
+  
+  .ak-heartbeat-btn:before,
+  .ak-heartbeat-btn:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba($primary, 70%);
+    opacity: 0.5;
+  }
+  
+  .ak-heartbeat-btn:before {
+    z-index: 0;
+    animation: pulse-border 1500ms ease-out infinite;
+  }
+  .ak-heartbeat-btn.no-animation:before {
+    z-index: 0;
+    animation: none;
+  }
+  
+  .ak-heartbeat-btn:after {
+    z-index: 1;
+    transition: all 200ms;
+  }
+  
+  .ak-heartbeat-btn {
+    .bi-telephone {
+      position: absolute;
+      z-index: 3;
+      left: 70%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      padding-left: 0.4rem;
+      color: #c5cacd;
+    }
+
+    img.logo {
+        z-index: 3;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 3.5rem;
+        height: 4rem;
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%; 
+    }
+  }
+  .ak-heartbeat-btn {
+    span {
+      display: flex;
+      position: relative;
+      z-index: 3;
+      width: 60px;
+      height: 60px;
+      align-items: center;
+      justify-content: center;
+      border-left: 16px solid currentColor;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      color: #c5cacd;
+    }
+  }
+  .ak-heartbeat-btn {
+    &i:hover {
+      color: $black;
+    }
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+
+#collapsible-nav-dropdown {
+  padding-left: 1.5rem;
+}
+
+a.navlink.nav-link {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.nav3 {
+  justify-content: flex-end !important;
+}
+
+.nav-tabs {
+    padding-left: 5rem;
+    border: none;
+}
+
+.theme-switch {
+    width: fit-content;
+}
+
+.phone-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    background-color: #0000b3;
+    border-radius: 50%;
+}
+
+.phone-span-dark {
+    background-color: #0000b3;
+}
+
+.bi-telephone {
+    color: #0000b3;
+}
+
+.bi-telephone-dark {
+    color: #b3b3b3;
+}
+
+.phone-number {
+    text-decoration: none;
+    color: #0000b3;
+}
+
+.phone-number-dark {
+    color: #b3b3b3;
+}
+
+a.fw-semibold.fs-5.nav-link:hover {
+    color: #0000b3;
+}
+
