@@ -253,3 +253,19 @@ a.fw-semibold.fs-5.nav-link:hover {
     color: #0000b3;
 }
 
+.needSpace {
+  height: 3rem;
+  max-height: 3rem;
+}
+
+row.g-4 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.card-body {
+  background-color: inherit;
+  opacity: 0.6;
+}

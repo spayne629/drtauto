@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { useTheme } from './context/ThemeContext';
 import Header from './components/Header';
 import CarouselSwiper from './components/CarouselSwiper';
+import Services from './components/Services';
+import Divider from './components/Divider';
 import './App.css';
 import './custom.scss';
 
@@ -16,6 +18,8 @@ function App() {
     <>
         <Header />
         <CarouselSwiper />
+        <Divider />
+        <Services />
     </>
   )
 }
