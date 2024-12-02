@@ -4,6 +4,7 @@ import Header from './components/Header';
 import CarouselSwiper from './components/CarouselSwiper';
 import Services from './components/Services';
 import Spacer from './components/Spacer';
+import FeaturedCards from './components/FeaturedCards';
 import './App.css';
 import './custom.scss';
 
@@ -19,6 +20,7 @@ function App() {
         <Header />
         <CarouselSwiper />
         <Spacer />
+        <FeaturedCards />
         <Services />
     </>
   )

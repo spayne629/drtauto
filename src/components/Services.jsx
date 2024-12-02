@@ -4,7 +4,6 @@ import '../custom.scss';
 import { useTheme } from '../context/ThemeContext';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 const Services = () => {
