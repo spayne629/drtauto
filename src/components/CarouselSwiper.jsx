@@ -1,12 +1,12 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';23
+import { useTheme } from '../context/ThemeContext';
+
 import 'swiper/css';
 import 'swiper/css/bundle';
 import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
 import '../custom.scss';
-import { useTheme } from '../context/ThemeContext';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 import img1 from '../assets/images/1.jpg';
 import img2 from '../assets/images/bNs.jpg';
@@ -26,6 +26,7 @@ const CarouselSwiper = () => {
             <div className="swiper mySwiper">
                 <div className="swiper-wrapper">
                     <Swiper
+                    autoplay={true}
                     effect={'coverflow'}
                     grabCursor={true}
                     centeredSlides={true}
@@ -71,13 +72,9 @@ const CarouselSwiper = () => {
                     </SwiperSlide>
                     </Swiper>
                 </div>
-                <div className="swiper-pagination"></div>
-                <div
-                    className="swiper-button-prev"
-                ></div>
-                <div
-                    className="swiper-button-next"
-                ></div>
+                <div className="swiper-pagination" />
+                <div className="swiper-button-prev" />xi
+                <div className="swiper-button-next" />
             </div>
         </>
     );

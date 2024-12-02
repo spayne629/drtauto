@@ -3,6 +3,8 @@
   font-weight: 400;
   font-size: 16px;
   background-color: #000000;
+  margin: 0;
+  padding: 0;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,3 +23,7 @@ body {
   min-height: 100vh;
 }
 
+.nav {
+  margin: 0;
+  padding: 0;
+}

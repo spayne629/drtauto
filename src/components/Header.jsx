@@ -11,7 +11,7 @@ const Header = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <Navbar collapseOnSelect expand="md" className={`bg-body-tertiary w-100 ${theme === 'light' ? 'navbar-light bg-light' : 'navbar-dark bg-dark'}`}>
+    <Navbar collapseOnSelect expand="md" className={`bg-body-tertiary w-100 ${theme === 'light' ? 'navbar-light bg-light' : 'navbar-dark bg-dark'}`} sticky="top">
       <Container fluid>
         <Navbar.Brand href="#home">
           <div className="heartbeat-icon justify-content-center me-1">

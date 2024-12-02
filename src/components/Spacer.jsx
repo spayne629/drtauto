@@ -3,7 +3,7 @@ import '../custom.scss';
 import { useTheme } from '../context/ThemeContext';
 import Container from 'react-bootstrap/Container';
 
-const Divider = () => {
+const Spacer = () => {
     const { theme } = useTheme();
 
     return (
@@ -13,4 +13,4 @@ const Divider = () => {
     );
 };
 
-export default Divider;
+export default Spacer;

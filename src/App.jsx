@@ -3,7 +3,7 @@ import { useTheme } from './context/ThemeContext';
 import Header from './components/Header';
 import CarouselSwiper from './components/CarouselSwiper';
 import Services from './components/Services';
-import Divider from './components/Divider';
+import Spacer from './components/Spacer';
 import './App.css';
 import './custom.scss';
 
@@ -18,7 +18,7 @@ function App() {
     <>
         <Header />
         <CarouselSwiper />
-        <Divider />
+        <Spacer />
         <Services />
     </>
   )
