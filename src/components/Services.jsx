@@ -1,13 +1,11 @@
 import React from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../custom.scss';
-import { useTheme } from '../context/ThemeContext';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 
 const Services = () => {
-    const { theme } = useTheme();
 
     return (
         <>

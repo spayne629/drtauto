@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import DrTNavsNTabs from './DrTNavsNTabs';
 import ThemeSwitcher from './ThemeSwitcher';
 import '../custom.scss';
 
@@ -14,24 +15,9 @@ const Header = () => {
             <span className="ak-heartbeat-btn justify-content-center"><img className="logo" src="/src/assets/images/logo2.png" alt="Dr. T logo"/></span>
           </div>
           <ThemeSwitcher />
+          <DrTNavsNTabs />
         </Nav>
-        <Container>
-          <Navbar className="justify-content-center" id="middle-nav">
-            <Nav.Item className="px-3">
-              <Nav.Link href="#" className="h4 fw-medium fs-4">Home</Nav.Link>
-            </Nav.Item>
-            <Nav.Item className="px-3">
-              <Nav.Link href="#services" className="h4 fw-medium fs-4">Services</Nav.Link>
-            </Nav.Item>
-            <Nav.Item className="px-3">
-              <Nav.Link href="About" className="h4 fw-medium fs-4">About</Nav.Link>
-            </Nav.Item>
-            <Nav.Item className="px-3">
-              <Nav.Link href="#contact" className="h4 fw-medium fs-4">Contact</Nav.Link>
-            </Nav.Item>
-          </Navbar>
-        </Container>
-        <Navbar.Collapse className="justify-content-end align-items-center">
+          <Navbar.Collapse className="justify-content-end align-items-center">
           <Nav className="py-2 phone-contact">
             <span className="phone-span me-2">
             <i className="bi bi-telephone me-2 ps-2 text-secondary"></i>

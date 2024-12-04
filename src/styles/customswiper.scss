@@ -1,5 +1,9 @@
 @import '../node_modules/swiper/swiper';
 
+.swiper-container {
+  top: 2rem;
+}
+
 .swiper {
     position: relative;
     overflow: hidden;

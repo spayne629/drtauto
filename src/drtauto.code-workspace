@@ -5,7 +5,12 @@
 		},
 		{
 			"path": "F:/projects/templates/boilerplate"
+		},
+		{
+			"path": "F:/projects/justHTML/drThtmL"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"editor.autoClosingBrackets": "always"
+	}
 }
